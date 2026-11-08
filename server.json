@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "uk.co.reliness/uk-data",
+  "title": "UK Data for Agents",
+  "description": "UK public data tools for agents: companies, tenders, property, stats, documents. No key to start",
+  "version": "1.4.0",
+  "websiteUrl": "https://ukdata.reliness.co.uk",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://ukdata.reliness.co.uk/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Optional. Bearer <key> for more than the free daily allowance; free key from POST https://ukdata.reliness.co.uk/keys",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
